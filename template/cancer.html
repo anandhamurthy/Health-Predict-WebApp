@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Cancer Prediction
+        </div>
+        <form action="/cancer_result" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Radius mean :</label>
+                    <input type="text" class="input" id="radius_mean" name="radius_mean">
+                </div>
+
+                <div class="inputfield">
+                    <label>Texture mean :</label>
+                    <input type="text" class="input" id="texture_mean" name="texture_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Perimeter mean :</label>
+                    <input type="text" class="input" id="perimeter_mean" name="perimeter_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Area mean :</label>
+                    <input type="text" class="input" id="area_mean" name="area_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Smoothness mean :</label>
+                    <input type="text" class="input" id="smoothness_mean" name="smoothness_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Compactness mean :</label>
+                    <input type="text" class="input" id="compactness_mean" name="compactness_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Concavity mean :</label>
+                    <input type="text" class="input" id="concavity_mean" name="concavity_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Concave points mean :</label>
+                    <input type="text" class="input" id="concave_points_mean" name="concave_points_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Symmetry mean :</label>
+                    <input type="text" class="input" id="symmetry_mean" name="symmetry_mean">
+                </div>
+                <div class="inputfield">
+                    <label>fractal dimension mean :</label>
+                    <input type="text" class="input" id="fractal_dimension_mean" name="fractal_dimension_mean">
+                </div>
+                <div class="inputfield">
+                    <label>Radius se :</label>
+                    <input type="text" class="input" id="radius_se" name="radius_se">
+                </div>
+                <div class="inputfield">
+                    <label>Texture se :</label>
+                    <input type="text" class="input" id="texture_se" name="texture_se">
+                </div>
+                <div class="inputfield">
+                    <label>Perimeter se :</label>
+                    <input type="text" class="input" id="perimeter_se" name="perimeter_se">
+                </div>
+                <div class="inputfield">
+                    <label>Area se :</label>
+                    <input type="text" class="input" id="area_se" name="area_se">
+                </div>
+                <div class="inputfield">
+                    <label>Smoothness se :</label>
+                    <input type="text" class="input" id="smoothness_se" name="smoothness_se">
+                </div>
+                <div class="inputfield">
+                    <label>Compactness se :</label>
+                    <input type="text" class="input" id="compactness_se" name="compactness_se">
+                </div>
+                <div class="inputfield">
+                    <label>Concavity se :</label>
+                    <input type="text" class="input" id="concavity_se" name="concavity_se">
+                </div>
+                <div class="inputfield">
+                    <label>Concave points se :</label>
+                    <input type="text" class="input" id="concave_points_se" name="concave_points_se">
+                </div>
+
+                <div class="inputfield">
+                    <label>Symmetry se :</label>
+                    <input type="text" class="input" id="symmetry_se" name="symmetry_se">
+                </div>
+                <div class="inputfield">
+                    <label>Fractal dimension se :</label>
+                    <input type="text" class="input" id="fractal_dimension_se" name="fractal_dimension_se">
+                </div>
+                <div class="inputfield">
+                    <label>Radius worst :</label>
+                    <input type="text" class="input" id="radius_worst" name="radius_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Texture worst :</label>
+                    <input type="text" class="input" id="texture_worst" name="texture_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Perimeter worst :</label>
+                    <input type="text" class="input" id="perimeter_worst" name="perimeter_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Area worst :</label>
+                    <input type="text" class="input" id="area_worst" name="area_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Smoothness worst :</label>
+                    <input type="text" class="input" id="smoothness_worst" name="smoothness_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Compactness worst :</label>
+                    <input type="text" class="input" id="compactness_worst" name="compactness_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Concavity worst :</label>
+                    <input type="text" class="input" id="concavity_worst" name="concavity_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Concave points worst :</label>
+                    <input type="text" class="input" id="concave_points_worst" name="concave_points_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Symmetry worst :</label>
+                    <input type="text" class="input" id="symmetry_worst" name="symmetry_worst">
+                </div>
+                <div class="inputfield">
+                    <label>Fractal dimension worst :</label>
+                    <input type="text" class="input" id="fractal_dimension_worst" name="fractal_dimension_worst">
+                </div>
+
+                <div class="inputfield">
+                    <input type="submit" value="Check !" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

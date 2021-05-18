@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Heart Prediction
+        </div>
+        <form action="/heart_result" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Age :</label>
+                    <input type="text" class="input" id="age" name="age">
+                </div>
+
+                <div class="inputfield">
+                    <label>Gender<br><b>Male(1)<br>Female(0)</b>:</label>
+                    <input type="text" class="input" id="gender" name="gender">
+                </div>
+
+                <div class="inputfield">
+                    <label>Chest Pain type<br><b>Typical Angina(0)<br>Atypical Angina(1)<br>Non-angina pain(2)<br>Asymptomatic(3))</b>:</label>
+                    <input type="text" class="input" id="chest_pain_type" name="chest_pain_type">
+                </div>
+                <div class="inputfield">
+                    <label>Resting BP<br><b>(mm/Hg)</b>:</label>
+                    <input type="text" class="input" id="trestbps" name="trestbps">
+                </div>
+                <div class="inputfield">
+                    <label>Serum cholestoral<br><b>(mg/dl)</b>:</label>
+                    <input type="text" class="input" id="s_c_i_mg" name="s_c_i_mg">
+                </div>
+                <div class="inputfield">
+                    <label>Exercise include angina<br><b>No(0)<br>Yes(1)</b>:</label>
+                    <input type="text" class="input" id="restecg" name="restecg">
+                </div>
+                <div class="inputfield">
+                    <label>Max. Heart Rate achieved :</label>
+                    <input type="text" class="input" id="thalach" name="thalach">
+                </div>
+                <div class="inputfield">
+                    <label>Exercise include angina<br><b>No(0)<br>Yes(1)</b> :</label>
+                    <input type="text" class="input" id="exang" name="exang">
+                </div>
+                <div class="inputfield">
+                    <label>Oldpeak :</label>
+                    <input type="text" class="input" id="oldpeak" name="oldpeak">
+                </div>
+                <div class="inputfield">
+                    <label>Slope<br><b>Upsloping(0)<br>Flat(1)<br>Downsloping(2)</b>:</label>
+                    <input type="text" class="input" id="slop" name="slop">
+                </div>
+                <div class="inputfield">
+                    <label>Thalassemia<br><b>Unknown(0)<br>Normal(1)<br>Fixed defect(2)<br>Reversible defect(3)</b>:</label>
+                    <input type="text" class="input" id="thal" name="thal">
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Check !" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

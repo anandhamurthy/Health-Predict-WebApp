@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Kidney Prediction
+        </div>
+        <form action="/kidney_result" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Age :</label>
+                    <input type="text" class="input" id="age" name="age">
+                </div>
+
+                <div class="inputfield">
+                    <label>BP (mm/Hg):</label>
+                    <input type="text" class="input" id="bp" name="bp">
+                </div>
+                <div class="inputfield">
+                    <label>Albumin :</label>
+                    <input type="text" class="input" id="alb" name="alb">
+                </div>
+                <div class="inputfield">
+                    <label>Sugar Level<br><b>(0,1,2,3,4,5)</b>:</label>
+                    <input type="text" class="input" id="sg" name="sg">
+                </div>
+                <div class="inputfield">
+                    <label>Pus Cell Clumps<br><b>present(0)<br>not-present(1)</b>:</label>
+                    <input type="text" class="input" id="pcc" name="pcc">
+                </div>
+                <div class="inputfield">
+                    <label>Blood Glucose Random (mgs/dl):</label>
+                    <input type="text" class="input" id="bgr" name="bgr">
+                </div>
+                <div class="inputfield">
+                    <label>Blood Urea (mgs/dl):</label>
+                    <input type="text" class="input" id="bu" name="bu">
+                </div>
+                <div class="inputfield">
+                    <label>Serum Creatinine (mgs/dl):</label>
+                    <input type="text" class="input" id="sc" name="sc">
+                </div>
+                <div class="inputfield">
+                    <label>Hemoglobin (gms):</label>
+                    <input type="text" class="input" id="hemo" name="hemo">
+                </div>
+                <div class="inputfield">
+                    <label>Packed Cell Volume :</label>
+                    <input type="text" class="input" id="pcv" name="pcv">
+                </div>
+                <div class="inputfield">
+                    <label>Hypertension<br><b>No(0)<br>Yes(1)</b>:</label>
+                    <input type="text" class="input" id="hyper" name="hyper">
+                </div>
+                <div class="inputfield">
+                    <label>Diabetes Mellitus<br><b>Yes(1)<br>No(0)</b>:</label>
+                    <input type="text" class="input" id="dm" name="dm">
+                </div>
+                <div class="inputfield">
+                    <label>Appetite<br><b>Good(1)<br>Poor(0)</b>:</label>
+                    <input type="text" class="input" id="app" name="app">
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Check !" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

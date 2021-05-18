@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Liver Prediction
+        </div>
+        <form action="/liver_result" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Age :</label>
+                    <input type="text" class="input" id="age" name="age">
+                </div>
+                <div class="inputfield">
+                    <label>Gender<br><b>Male(1)<br>Female(0)</b>:</label>
+                    <input type="text" class="input" id="gender" name="gender">
+                </div>
+                <div class="inputfield">
+                    <label>Total Bilirubin<br><b>(mg/dL)</b>:</label>
+                    <input type="text" class="input" id="total_bilirubin" name="total_bilirubin">
+                </div>
+                <div class="inputfield">
+                    <label>Direct Bilirubin<br><b>(mg/dL)</b>:</label>
+                    <input type="text" class="input" id="direct_bilirubin" name="direct_bilirubin">
+                </div>
+                <div class="inputfield">
+                    <label>Alkaline Phosphotase<br><b>IU/L</b>:</label>
+                    <input type="text" class="input" id="alkaline_phosphotase" name="alkaline_phosphotase">
+                </div>
+                <div class="inputfield">
+                    <label>Alamine Aminotransferase<br><b>IU/L</b>:</label>
+                    <input type="text" class="input" id="alamine_aminotransferase" name="alamine_aminotransferase">
+                </div>
+                <div class="inputfield">
+                    <label>Aspartate Aminotransferase<br><b>IU/L</b>:</label>
+                    <input type="text" class="input" id="aspartate_aminotransferase" name="aspartate_aminotransferase">
+                </div>
+                <div class="inputfield">
+                    <label>Total Protiens<br><b>g/dL</b>:</label>
+                    <input type="text" class="input" id="total_protiens" name="total_protiens">
+                </div>
+                <div class="inputfield">
+                    <label>Albumin<br><b>g/dL</b>:</label>
+                    <input type="text" class="input" id="albumin" name="albumin">
+                </div>
+                <div class="inputfield">
+                    <label>Albumin & Globulin Ratio :</label>
+                    <input type="text" class="input" id="agr" name="agr">
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Check !" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
